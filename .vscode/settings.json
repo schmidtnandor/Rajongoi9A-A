@@ -3,5 +3,6 @@
     "editor.mouseWheelZoom": true,
     "git.branchProtection": [
         "main"
-    ]
+    ],
+    "git.enableSmartCommit": true
 }
