@@ -5,3 +5,7 @@ nav a:hover{
 {
 max-height: 300px;
 }
+#fooldal_content div {
+    border: 2px solid #0091AD;
+
+}
