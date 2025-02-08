@@ -4,5 +4,6 @@
     "git.branchProtection": [
         "main"
     ],
-    "git.enableSmartCommit": true
+    "git.enableSmartCommit": true,
+    "liveServer.settings.port": 5501
 }

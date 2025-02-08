@@ -1,0 +1,30 @@
+nav a:hover {
+    text-decoration: underline;
+   
+}
+
+/* #fooldal_carousel img {
+    max-height: 300px;
+} */
+
+#fooldal_content {
+    background-color: #35beda;
+
+}
+
+/* #fooldal_content div {
+  
+} */
+.szovegdoboz {
+gap: 70px;
+
+}
+#fooldal_carousel {
+margin:auto;
+margin-top: 50px;
+margin-bottom: 50px;
+width: 435px;
+height: 500px;
+scale: 110%;
+display: flex;
+}
