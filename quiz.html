@@ -3,93 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/fajlok/css/quiz.css">
-    <link rel="stylesheet" href="/fajlok/css/style.css">
-    <link rel="stylesheet" href="/fajlok/css/bootstrap.css">
-    <title>Andrew Tate Giga-Mega Quiz</title>
-    <script src="/fajlok/js/bootstrap.bundle.js"></script>
+    <title>Quiz</title>
+    <script>
+        function checkAnswers() {
+            // Correct answers (no extra spaces or typos)
+            const correctAnswers = {
+                "kerdoiv-nev": "Andrew Tate", // Correct name
+                "kerdoiv-holel": "Románia",  // Correct place of birth
+                "kerdoiv-barat": "Goga Chad", // Correct friend
+                "kerdoiv-lecsukas": "Adócsalás" // Correct reason for imprisonment
+            };
+
+            // Get user-selected answers
+            const userAnswers = {
+                "kerdoiv-nev": document.getElementById("kerdoiv-nev").value,
+                "kerdoiv-holel": document.getElementById("kerdoiv-holel").value,
+                "kerdoiv-barat": document.getElementById("kerdoiv-barat").value,
+                "kerdoiv-lecsukas": document.getElementById("kerdoiv-lecsukas").value
+            };
+
+            // Check if all answers are correct
+            let allCorrect = true;
+            for (let key in correctAnswers) {
+                if (userAnswers[key] !== correctAnswers[key]) {
+                    allCorrect = false;
+                    break;
+                }
+            }
+
+            // Display the result
+            const resultElement = document.getElementById("result");
+            if (allCorrect) {
+                resultElement.textContent = "Gratulálok! Minden válasz helyes!";
+                resultElement.style.color = "green";
+            } else {
+                resultElement.textContent = "Valami nem stimmel. Próbáld újra!";
+                resultElement.style.color = "red";
+            }
+        }
+    </script>
 </head>
 <body>
 
-      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <div class="container-fluid">
-                  <a href="index.html" class="navbar-brand"><img src="fajlok/kepek/sigma_tate.png" width="95px" height="60px" class="rounded-pill"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                      <span class="navbar-toggler-icon "></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                  <ul class="navbar-nav">
-                        <li class="nav-item">
-                  <a class="nav-link text-white rounded-2" href="index.html">Főoldal</a>
-                        </li>
-                        <li class="nav-item">
-                  <a class="nav-link text-white rounded-2" href="viccespillanatok.html">Vicces pillanatok</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-white rounded-2" href="erdekessegek.html">Érdekességek</a>
-                       </li>
-                       <li class="nav-item">
-                          <a class="nav-link text-white rounded-2" href="keszitok.html">Készítők</a>
-                       </li>
-                       <li class="nav-item">
-                          <a class="nav-link text-white rounded-2" href="quiz.html">Quiz</a>
-                       </li>
-                      </ul>
-                  </div>
-            </div>
-            </nav>
-            
+    <fieldset>
+        <div>
+            <label for="kerdoiv-nev">Mi a neve?</label>
+            <select name="Mi a neve" id="kerdoiv-nev">
+                <option value="" selected></option>
+                <option value="Sigma Tate">Sigma Tate</option>
+                <option value="Andrew Andrew">Andrew Andrew</option>
+                <option value="Tate Tristan">Tate Tristan</option>
+                <option value="Andrew Tate">Andrew Tate</option> <!-- Fixed this option value -->
+                <option value="Minecraft Isti">McDonalds Isti</option>
+            </select>
+        </div>
+        <div>
+            <label for="kerdoiv-holel">Hol született?</label>
+            <select name="Hol született" id="kerdoiv-holel">
+                <option value="" selected></option>
+                <option value="Washimgton D.C.">Washimgton D.C.</option>
+                <option value="Kongo">Kongo</option>
+                <option value="Románia">Románia</option> <!-- Correct answer -->
+                <option value="Miskolc">Miskolc</option>
+            </select>
+        </div>
+        <div>
+            <label for="kerdoiv-barat">Ki volt az első jó barátja?</label>
+            <select name="Ki volt az első jó barátja" id="kerdoiv-barat">
+                <option value="" selected></option>
+                <option value="Anyukája">Anyukája</option>
+                <option value="Kovács László">Kovács László</option>
+                <option value="Goga Chad">Goga Chad</option> <!-- Correct answer -->
+                <option value="Mihály László">Mihály László</option>
+            </select>
+        </div>
+        <div>
+            <label for="kerdoiv-lecsukas">Miért csukatták le?</label>
+            <select name="Miért csukatták le?" id="kerdoiv-lecsukas">
+                <option value="" selected></option>
+                <option value="Adócsalás">Adócsalás</option> <!-- Correct answer -->
+                <option value="Lopás">Lopás</option>
+                <option value="Testi erőszak">Testi erőszak</option>
+                <option value="Ember kereskedelem">Ember kereskedelem</option>
+                <option value="Nemi Erőszak">Nemi Erőszak</option>
+            </select>
+        </div>
+        <img id="Kerdoiv_Andrew" src="fajlok/kepek/Andrew.png" alt="Andrew">
+        <div>
+            <button type="button" onclick="checkAnswers()">Ellenőrizd a válaszokat</button>
+        </div>
+    </fieldset>
 
- <fieldset>
-            <div>
-                  <label for="kerdoiv-nev">Mi a neve?</label>
-                  <select name="Mi a neve" id="kerdoiv-nev">
-                        <option value="" selected></option>
-                        <option value="Sigma Tate">Sigma Tate</option>
-                        <option value="Andrew Andrew">Andrew Andrew</option>
-                        <option value="Tate Tristan">Tate Tristan</option>
-                        <option value="Andrew Tate">Emory Andrew Tate</option>
-                        <option value="Minecraft Isti">McDonalds Isti</option>
-                  </select>
-            </div>
-            <div>
-                  <label for="kerdoiv-holel">Hol született?</label>
-                  <select name="Hol született" id="kerdoiv-holel">
-                        <option value="" selected></option>
-                        <option value="Washimgton D.C.">Washimgton D.C.</option>
-                        <option value="Kongo">Kongo</option>
-                        <option value="Románia">Románia</option>
-                        <option value="Miskolc">Miskolc</option>
-                  </select>
-            </div>
-            <div>
-                  <label for="kerdoiv-barat"></label>
-                  <select name="Ki volt az első jó barátja" id="kerdoiv-barat">
-                        <option value="" selected></option>
-                        <option value="Anyukája">Anyukája</option>
-                        <option value="Kovács László">Kovács László</option>
-                        <option value="Goga Chad">Goga Chad</option>
-                        <option value="Mihály László">Mihály László</option>
-                  </select>
-            </div>
-            <div>
-                  <label for="kerdoiv-lecsukas">Miért csukatták le?</label>
-                  <select name="Miért csukatták le?" id="kerdoiv-lecsukas">
-                        <option value="" selected></option>
-                        <option value="Apját">Adócsalás</option>
-                        <option value="Féltestvérét">Lopás</option>
-                        <option value="Anyját">Testi erőszak</option>
-                        <option value="Hugát">Ember kereskedelem</option>
-                        <option value="Nemi Erőszak">Nemi Erőszak</option>
-                  </select>
-            </div>
-            <img id="Kerdoiv_Andrew" src="fajlok/kepek/Andrew.png" alt="Andrew">
-            <div>
+    <div id="result"></div> <!-- Result will be displayed here -->
 
-
-
-
-            </div>
- </fieldset>
 </body>
 </html>
