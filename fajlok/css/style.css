@@ -7,6 +7,9 @@ nav a:hover {
     max-height: 300px;
 } */
 
+#fooldal_carousel img{    
+border-radius: 25px;
+}
 #fooldal_content {
     background-color: #35beda;
     

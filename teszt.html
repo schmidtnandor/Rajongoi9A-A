@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DVD Logo Bounce</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        #easteregg {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            margin: 20px;
+            display: block;
+        }
+
+        #dvd-logo {
+            width: auto;
+            height: auto;
+            position: absolute;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/85/Dvd_logo.svg');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+
+<a href="#" id="easteregg">Click me for the Easter Egg!</a>
+<div id="dvd-logo"></div>
+
+<script>
+    document.getElementById('easteregg').addEventListener('click', function(e) {
+        e.preventDefault();
+        startBouncing();
+    });
+
+    function startBouncing() {
+        const logo = document.getElementById('dvd-logo');
+        let x = Math.random() * (window.innerWidth - logo.offsetWidth);
+        let y = Math.random() * (window.innerHeight - logo.offsetHeight);
+        let dx = 2;
+        let dy = 2;
+
+        function bounce() {
+            if (x + logo.offsetWidth > window.innerWidth || x < 0) dx = -dx;
+            if (y + logo.offsetHeight > window.innerHeight || y < 0) dy = -dy;
+
+            x += dx;
+            y += dy;
+
+            logo.style.left = x + 'px';
+            logo.style.top = y + 'px';
+
+            requestAnimationFrame(bounce);
+        }
+
+        bounce();
+    }
+</script>
+
+</body>
+</html>
