@@ -7,8 +7,12 @@ nav a:hover {
     max-height: 300px;
 } */
 
+#fooldal_carousel img{    
+border-radius: 25px;
+}
 #fooldal_content {
     background-color: #35beda;
+    
 
 }
 
@@ -25,6 +29,23 @@ margin-top: 50px;
 margin-bottom: 50px;
 width: 435px;
 height: 500px;
-scale: 110%;
+scale: 120%;
 display: flex;
+}
+/* easter egg */
+
+
+
+#eastereggImage {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+}
+
+body {
+    
+    background-color: #000;
 }
