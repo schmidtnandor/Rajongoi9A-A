@@ -32,3 +32,20 @@ height: 500px;
 scale: 120%;
 display: flex;
 }
+/* easter egg */
+
+
+
+#eastereggImage {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+}
+
+body {
+    
+    background-color: #000;
+}

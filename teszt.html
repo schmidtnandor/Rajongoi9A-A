@@ -8,7 +8,7 @@
         body {
             margin: 0;
             overflow: hidden;
-            background-color: white;
+            background-color: #000;
         }
 
         #easteregg {
@@ -19,11 +19,11 @@
             display: block;
         }
 
-        #dvd-logo {
-            width: auto;
-            height: auto;
+        #lowtaperfade {
+            width: 100px;
+            height: 60px;
             position: absolute;
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/85/Dvd_logo.svg');
+            background-image: url('https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/88/9c/6f/889c6fd6-2445-7208-6a41-18a909b48c28/artwork.jpg/800x800cc.jpg');
             background-size: cover;
         }
     </style>
@@ -31,37 +31,10 @@
 <body>
 
 <a href="#" id="easteregg">Click me for the Easter Egg!</a>
-<div id="dvd-logo"></div>
+<div id="lowtaperfade"></div>
+<script src="fajlok/js/bounce.js"></script>
 
-<script>
-    document.getElementById('easteregg').addEventListener('click', function(e) {
-        e.preventDefault();
-        startBouncing();
-    });
 
-    function startBouncing() {
-        const logo = document.getElementById('dvd-logo');
-        let x = Math.random() * (window.innerWidth - logo.offsetWidth);
-        let y = Math.random() * (window.innerHeight - logo.offsetHeight);
-        let dx = 2;
-        let dy = 2;
-
-        function bounce() {
-            if (x + logo.offsetWidth > window.innerWidth || x < 0) dx = -dx;
-            if (y + logo.offsetHeight > window.innerHeight || y < 0) dy = -dy;
-
-            x += dx;
-            y += dy;
-
-            logo.style.left = x + 'px';
-            logo.style.top = y + 'px';
-
-            requestAnimationFrame(bounce);
-        }
-
-        bounce();
-    }
-</script>
 
 </body>
 </html>
