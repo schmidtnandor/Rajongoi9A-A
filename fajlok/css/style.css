@@ -49,3 +49,22 @@ body {
     
     background-color: #000;
 }
+#auto_carousel img {
+    width: 1120px;
+    height: 628px;
+    display: flex;
+    margin:auto;
+}
+.carousel-caption {
+    background: #ffffff;
+    opacity: 60%;
+}
+.carousel-caption h5 {
+    color: black;
+    opacity: 180%;
+}
+.carousel-caption p{
+    color: black;
+    opacity: 180%;
+    font-size: 1.5em;
+}
