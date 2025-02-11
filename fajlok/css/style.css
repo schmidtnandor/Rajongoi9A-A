@@ -27,8 +27,8 @@ gap: 70px;
 margin:auto;
 margin-top: 50px;
 margin-bottom: 50px;
-width: 435px;
-height: 500px;
+width: relative;
+height: relative;
 scale: 120%;
 display: flex;
 }
