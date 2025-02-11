@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
+    <link rel="stylesheet" href="fajlok/css/quiz.css">
     <link rel="stylesheet" href="fajlok/css/style.css">
     <link rel="stylesheet" href="fajlok/css/bootstrap.css">
     <script>
@@ -12,7 +13,7 @@
             const correctAnswers = {
                 "kerdoiv-nev": "Andrew Tate", // Correct name
                 "kerdoiv-holel": "Románia",  // Correct place of birth
-                "kerdoiv-barat": "Goga Chad", // Correct friend
+                "kerdoiv-kiszemelt": "Dua Lipa", // Correct friend
                 "kerdoiv-lecsukas": "Adócsalás" // Correct reason for imprisonment
             };
 
@@ -20,7 +21,7 @@
             const userAnswers = {
                 "kerdoiv-nev": document.getElementById("kerdoiv-nev").value,
                 "kerdoiv-holel": document.getElementById("kerdoiv-holel").value,
-                "kerdoiv-barat": document.getElementById("kerdoiv-barat").value,
+                "kerdoiv-kiszemelt": document.getElementById("kerdoiv-kiszemelt").value,
                 "kerdoiv-lecsukas": document.getElementById("kerdoiv-lecsukas").value
             };
 
@@ -98,13 +99,13 @@
                     </select>
                 </div>
                 <div>
-                    <label for="kerdoiv-barat">Ki volt az első jó barátja?</label>
-                    <select name="Ki volt az első jó barátja" id="kerdoiv-barat">
+                    <label for="kerdoiv-kiszemelt">Ki a kiszemeltje?</label>
+                    <select name="Ki a kiszemeltje" id="kerdoiv-kiszemelt">
                         <option value="" selected></option>
-                        <option value="Anyukája">Anyukája</option>
-                        <option value="Kovács László">Kovács László</option>
-                        <option value="Goga Chad">Goga Chad</option> <!-- Correct answer -->
-                        <option value="Mihály László">Mihály László</option>
+                        <option value="Anyukája">Dua Lipa</option><!-- Correct answer -->
+                        <option value="Kovács László">Miley Cyrus</option>
+                        <option value="Goga Chad">Giga Chad</option> 
+                        <option value="Mihály László">Tóth Gabi</option>
                     </select>
                 </div>
                 <div>
@@ -117,6 +118,12 @@
                         <option value="Ember kereskedelem">Ember kereskedelem</option>
                         <option value="Nemi Erőszak">Nemi Erőszak</option>
                     </select>
+                </div>
+                <div>
+
+
+
+                    
                 </div>
                 <img id="Kerdoiv_Andrew" src="fajlok/kepek/Andrew.png" alt="Andrew">
                 <div>
