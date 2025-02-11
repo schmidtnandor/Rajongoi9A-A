@@ -1,24 +1,16 @@
-nav a:hover {
+
+  nav a:hover {
     text-decoration: underline;
    
 }
 
-/* #fooldal_carousel img {
-    max-height: 300px;
-} */
+
+
 
 #fooldal_carousel img{    
 border-radius: 25px;
 }
-#fooldal_content {
-    background-color: #35beda;
-    
 
-}
-
-/* #fooldal_content div {
-  
-} */
 .szovegdoboz {
 gap: 70px;
 
@@ -45,7 +37,9 @@ display: flex;
     height: 200px;
 }
 
-body {
-    
-    background-color: #000;
-}
+/* #oldal_content {
+    background-color: #35beda;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+} */
