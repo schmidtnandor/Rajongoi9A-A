@@ -7,26 +7,36 @@
     <link rel="stylesheet" href="fajlok/css/bootstrap.css">
     <title>Andrew Tate - Érdekességek</title>
     <style>
+
       table {
         border: 2px solid #000000;
         font-family: arial, sans-serif;
         border-collapse: collapse;
         width: 75%;
-      }        
+        text-align: center;
+      }
       
       td, th {
         border: 1px solid #000000;
-        text-align: left;
+        text-align: center;
         padding: 8px;
       }
                   
       th{
-        background-color: #aaaaaa;
+        background-color: #212529;
+        color: #ffffff;
       }
+
       
-      tr:nth-child(even) {
-        background-color: #cccccc;
+      tr:nth-child(odd) {
+        background-color: #089893;
       }
+
+      tr:nth-child(even) {
+        background-color: #353839;
+        color: #ffffff;
+      }
+
       
       </style>
     <script src="fajlok/js/bootstrap.bundle.js"></script>
@@ -60,20 +70,25 @@
                   </div>
             </div>
             </nav>
-            <h1>Érdekességek Andrew Tateről:</h1>
-            <h2>Foglalkozásai:</h2>
-            <ul>
-                  <li>Kickboxoló</li>
-                  <li>MMA-harcos</li>
-                  <li>Influenszer</li>
-                  <li>Internetes személyiség</li>
-                  <li>Televíziós személyiség</li>
-                  <li>Digital Marketing Expert</li>
-                  <li>Podcaster</li>
-                  <li>Vállalkozó</li>
-            </ul>
-
-            <h2>Kickbox Teljesítmények</h2>
+            <h1 class="text-center">Érdekességek Andrew Tateről:</h1>
+            <div class="row szovegdoboz justify-content-center">
+                  <div class="col-md-3 p-3 bg-dark shadow-lg h-50" style="border-radius: 25px;">
+                      <h2 class="text-center text-white">Foglalkozásai</h2>
+                      <p class="text-center text-white">
+                            Kick-boxoló <br>
+                            MMA-harcos <br>
+                            Influenszer <br>
+                            Internetes személyiség <br>
+                            Televíziós személyiség <br>
+                            Digital Marketing Expert <br>
+                            Podcaster <br>
+                            Vállalkozó
+                      </p>
+                  </div>
+            <div class="row szovegdoboz justify-content-center">
+                  <div class="col-md-3 p-3 bg-dark shadow-lg h-200" style="border-radius: 25px;">
+                      <h2 class="text-center text-white">Kick-box Teljesítmények</h2>
+                  </div>
             <table>
                   <thead>
                         <tr>
@@ -304,8 +319,10 @@
                         </tr>
                   </tbody>
             </table>
-
-            <h2>MMA Teljesítmények</h2>
+            <div class="row szovegdoboz justify-content-center">
+                  <div class="col-md-3 p-3 bg-dark shadow-lg h-200" style="border-radius: 25px;">
+                      <h2 class="text-center text-white">MMA Teljesítmények</h2>
+                  </div>
             <table>
 
                   <thead>
@@ -333,7 +350,7 @@
                               <td>Essex, Anglia</td>
                         </tr>
                         <tr>
-                              <td>2010,06,06,</td>
+                              <td>2010.06.06.</td>
                               <td>Győzelem</td>
                               <td>Shane Kavanagh</td>
                               <td>Ultimate Warrior Challenge 13</td>
@@ -341,23 +358,25 @@
                         </tr>
                   </tbody>
             </table>
-
-            <h2>Autógyűjteménye</h2>
-            <ul>
-                  <li>Bugatti Chiron</li>
-                  <li>McLaren 720S</li>
-                  <li>McLaren 765LT</li>
-                  <li>Rolls Royce Wraith</li>
-                  <li>Ferrari 812 Superfast</li>
-                  <li>Porsche GT Street</li>
-                  <li>Aston Martin DBS Superleggera</li>
-                  <li>Mercedes B63 Brabus</li>
-                  <li>Bentley Continental GT</li>
-                  <li>Ferrari 458 Italia</li>
-                  <li>Aston Martin DB11</li>
-                  <li>Lamborghini Huracan EVO Spyder</li>
-                  <li>Mercedes Maybach V-Class</li>
-                  <li>BMW M5 Competition</li>
-                  </ul>
+            <div class="row szovegdoboz justify-content-center">
+                  <div class="col-md-3 p-3 bg-dark shadow-lg h-200" style="border-radius: 25px;">
+                      <h2 class="text-center text-white">Autógyűjteménye</h2>
+                      <p class="text-center text-white">
+                            Bugatti Chiron <br>
+                            McLaren 720S <br>
+                            McLaren 765LT <br>
+                            Rolls Royce Wraith <br>
+                            Ferrari 812 Superfast <br>
+                            Porsche GT Street <br>
+                            Aston Martin DBS Superleggera <br>
+                            Mercedes B63 Brabus <br>
+                            Bentley Continental GT <br>
+                            Ferrari 458 Italia <br>
+                            Aston Martin DB11 <br>
+                            Lamborghini Huracan EVO Spyder <br>
+                            Mercedes Maybach V-Class <br> 
+                            BMW M5 Competition
+                      </p>
+                  </div>
 </body>
 </html>
