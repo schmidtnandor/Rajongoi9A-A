@@ -4,8 +4,12 @@
    
 }
 
-
-
+ #viccespillanatok div{
+margin: 10px;
+}
+.row h2 {
+    text-align: center;
+}
 
 #fooldal_carousel img{    
 border-radius: 25px;
@@ -37,12 +41,6 @@ display: flex;
     height: 200px;
 }
 
-
-
-body {
-    
-    background-color: #000;
-}
 #auto_carousel img {
     width: 1120px;
     height: 628px;
