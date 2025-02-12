@@ -63,6 +63,13 @@ display: flex;
     font-size: 1.5em;
 }
 
+
 #quiz_content label{
 color: white;
 }
+
+.card_osszes div {
+    display: inline-block;
+    place-items: center;
+  }
+
