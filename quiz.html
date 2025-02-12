@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
-    <link rel="stylesheet" href="/fajlok/css/style.css">
-    <link rel="stylesheet" href="/fajlok/css/bootstrap.css">
+    <link rel="stylesheet" href="fajlok/css/quiz.css">
+    <link rel="stylesheet" href="fajlok/css/style.css">
+    <link rel="stylesheet" href="fajlok/css/bootstrap.css">
     <script>
         function checkAnswers() {
             // Correct answers (no extra spaces or typos)
             const correctAnswers = {
                 "kerdoiv-nev": "Andrew Tate", // Correct name
                 "kerdoiv-holel": "Románia",  // Correct place of birth
-                "kerdoiv-barat": "Goga Chad", // Correct friend
+                "kerdoiv-kiszemelt": "Dua Lipa", // Correct friend
                 "kerdoiv-lecsukas": "Adócsalás" // Correct reason for imprisonment
             };
 
@@ -20,7 +21,7 @@
             const userAnswers = {
                 "kerdoiv-nev": document.getElementById("kerdoiv-nev").value,
                 "kerdoiv-holel": document.getElementById("kerdoiv-holel").value,
-                "kerdoiv-barat": document.getElementById("kerdoiv-barat").value,
+                "kerdoiv-kiszemelt": document.getElementById("kerdoiv-kiszemelt").value,
                 "kerdoiv-lecsukas": document.getElementById("kerdoiv-lecsukas").value
             };
 
@@ -44,9 +45,9 @@
             }
         }
     </script>
-    <script src="/fajlok/js/bootstrap.bundle.js"></script>
+    <script src="fajlok/js/bootstrap.bundle.js"></script>
 </head>
-<body>
+<body style="background-color: #35beda;">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
               <a href="index.html" class="navbar-brand"><img src="fajlok/kepek/sigma_tate.png" width="95px" height="60px" class="rounded-pill"></a>
@@ -74,57 +75,118 @@
               </div>
         </div>
         </nav>
-
-    <fieldset>
-        <div>
-            <label for="kerdoiv-nev">Mi a neve?</label>
-            <select name="Mi a neve" id="kerdoiv-nev">
-                <option value="" selected></option>
-                <option value="Sigma Tate">Sigma Tate</option>
-                <option value="Andrew Andrew">Andrew Andrew</option>
-                <option value="Tate Tristan">Tate Tristan</option>
-                <option value="Andrew Tate">Andrew Tate</option> <!-- Fixed this option value -->
-                <option value="Minecraft Isti">McDonalds Isti</option>
-            </select>
+<div class="container-fluid" id="">
+    <h1 class="text-center">Andrew Tate Quiz</h1>
+            <fieldset>
+                <div>
+                    <label for="kerdoiv-nev">Mi a neve?</label>
+                    <select name="Mi a neve" id="kerdoiv-nev">
+                        <option value="" selected></option>
+                        <option value="Sigma Tate">Sigma Tate</option>
+                        <option value="Andrew Andrew">Andrew Andrew</option>
+                        <option value="Tate Tristan">Tate Tristan</option>
+                        <option value="Andrew Tate">Andrew Tate</option> <!-- Fixed this option value -->
+                        <option value="Minecraft Isti">McDonalds Isti</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="kerdoiv-holel">Hol született?</label>
+                    <select name="Hol született" id="kerdoiv-holel">
+                        <option value="" selected></option>
+                        <option value="Washimgton D.C.">Washimgton D.C.</option>
+                        <option value="Kongo">Kongo</option>
+                        <option value="Románia">Románia</option> <!-- Correct answer -->
+                        <option value="Miskolc">Miskolc</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="kerdoiv-kiszemelt">Ki a kiszemeltje?</label>
+                    <select name="Ki a kiszemeltje" id="kerdoiv-kiszemelt">
+                        <option value="" selected></option>
+                        <option value="Anyukája">Dua Lipa</option><!-- Correct answer -->
+                        <option value="Kovács László">Miley Cyrus</option>
+                        <option value="Goga Chad">Giga Chad</option> 
+                        <option value="Mihály László">Tóth Gabi</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="kerdoiv-lecsukas">Miért csukatták le?</label>
+                    <select name="Miért csukatták le?" id="kerdoiv-lecsukas">
+                        <option value="" selected></option>
+                        <option value="Adócsalás">Adócsalás</option> <!-- Correct answer -->
+                        <option value="Lopás">Lopás</option>
+                        <option value="Testi erőszak">Testi erőszak</option>
+                        <option value="Ember kereskedelem">Ember kereskedelem</option>
+                        <option value="Nemi Erőszak">Nemi Erőszak</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="kerdoiv-valalkozás">Mi volt az első jobban tejelő válalkozása?</label>
+                    <select name="Mi volt az első jobban tejelő válalkozása" id="kerdoiv-valalkozás">
+                        <option value="" selected></option>
+                        <option value="Vetkőzős lányok munkáltatása">Vetkőzős lányok munkáltatása</option>
+                        <option value="Tőzsde">Tőzsde</option>
+                        <option value="Kickbox">Kickbox</option>
+                        <option value="Kaszinó">Kaszinó</option>
+                    </select>
+                </div>
+                <div><label for="kerdoiv-musor">Melyik britt tévé műsorbol rakták ki?</label>
+                    <select name="Melyik britt tévé műsorbol rakták ki" id="kerdoiv-musor">
+                    <option value="" selected></option>
+                    <option value="BBC London">BBC London</option>
+                    <option value="The One Show">The One Show</option>
+                    <option value="Big Brother">Big Brother</option>
+                    <option value="Skibidi News">Skibidi News</option>
+                </select>
+                </div>
+                <div>
+                    <button type="button" onclick="checkAnswers()">Ellenőrizd a válaszokat</button>
+                </div>
+                <style>
+                    .image_valto {
+                        width: 700px;
+                        height: 500px;
+                        overflow: hidden;
+                        position: relative;
+                        float: right;
+                        opacity: 70;
+                    }
+                    .image_valto img {
+                        width: 100%;
+                        height: auto;
+                        display: none;
+                    }
+                </style>
+            </head>
+            <body>
+            
+            <div class="image_valto">
+                <img src="fajlok\kepek\tate_valto.png" alt="Táte" id="tate_valto" class="rounded pill">
+                <img src="fajlok\kepek\tate_valto2.png" alt="Táte" id="tate_valto2" class="rounded pill">
+                <img src="fajlok\kepek\tate_valto3.png" alt="Táte" id="tate_valto3" class="rounded pill">
+                <img src="fajlok/kepek/Andrew.png" alt="Mr.Andrew" id="andrew_valto" class="rounded pill">
+            </div>
+            
+            <script>
+                let currentImage = 0;
+                const images = document.querySelectorAll('.image_valto img');
+                
+                function showNextImage() {
+                    images[currentImage].style.display = 'none'; // Elrejti az aktuális képet
+                    currentImage = (currentImage + 1) % images.length; // Következő képre vált
+                    images[currentImage].style.display = 'block'; // Megjeleníti az új képet
+                }
+            
+                // Kezdőképként az első kép látszik
+                images[currentImage].style.display = 'block';
+            
+                // Képváltás minden 2 másodpercben
+                setInterval(showNextImage, 2500);
+            </script>
+            </fieldset>
+            <div id="result"></div> <!-- Result will be displayed here -->
         </div>
-        <div>
-            <label for="kerdoiv-holel">Hol született?</label>
-            <select name="Hol született" id="kerdoiv-holel">
-                <option value="" selected></option>
-                <option value="Washimgton D.C.">Washimgton D.C.</option>
-                <option value="Kongo">Kongo</option>
-                <option value="Románia">Románia</option> <!-- Correct answer -->
-                <option value="Miskolc">Miskolc</option>
-            </select>
-        </div>
-        <div>
-            <label for="kerdoiv-barat">Ki volt az első jó barátja?</label>
-            <select name="Ki volt az első jó barátja" id="kerdoiv-barat">
-                <option value="" selected></option>
-                <option value="Anyukája">Anyukája</option>
-                <option value="Kovács László">Kovács László</option>
-                <option value="Goga Chad">Goga Chad</option> <!-- Correct answer -->
-                <option value="Mihály László">Mihály László</option>
-            </select>
-        </div>
-        <div>
-            <label for="kerdoiv-lecsukas">Miért csukatták le?</label>
-            <select name="Miért csukatták le?" id="kerdoiv-lecsukas">
-                <option value="" selected></option>
-                <option value="Adócsalás">Adócsalás</option> <!-- Correct answer -->
-                <option value="Lopás">Lopás</option>
-                <option value="Testi erőszak">Testi erőszak</option>
-                <option value="Ember kereskedelem">Ember kereskedelem</option>
-                <option value="Nemi Erőszak">Nemi Erőszak</option>
-            </select>
-        </div>
-        <img id="Kerdoiv_Andrew" src="fajlok/kepek/Andrew.png" alt="Andrew">
-        <div>
-            <button type="button" onclick="checkAnswers()">Ellenőrizd a válaszokat</button>
-        </div>
-    </fieldset>
-
-    <div id="result"></div> <!-- Result will be displayed here -->
+</div>
 
 </body>
 </html>
