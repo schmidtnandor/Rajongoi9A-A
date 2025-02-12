@@ -3,15 +3,9 @@
     text-decoration: underline;
    
 }
-video {
-border-radius: 10px;
-}
-#viccespillanatok div{
-margin: 10px;
-}
-.row h2 {
-    text-align: center;
-}
+
+
+
 
 #fooldal_carousel img{    
 border-radius: 25px;
@@ -30,7 +24,7 @@ height: relative;
 
 display: flex;
 }
-
+/* easter egg */
 
 
 
@@ -43,6 +37,12 @@ display: flex;
     height: 200px;
 }
 
+
+
+body {
+    
+    background-color: #000;
+}
 #auto_carousel img {
     width: 1120px;
     height: 628px;
@@ -63,13 +63,7 @@ display: flex;
     font-size: 1.5em;
 }
 
-
-#quiz_content label{
-color: white;
-}
-
 .card_osszes div {
     display: inline-block;
     place-items: center;
   }
-
