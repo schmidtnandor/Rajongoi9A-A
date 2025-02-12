@@ -3,8 +3,10 @@
     text-decoration: underline;
    
 }
-
- #viccespillanatok div{
+video {
+border-radius: 10px;
+}
+#viccespillanatok div{
 margin: 10px;
 }
 .row h2 {
@@ -28,7 +30,7 @@ height: relative;
 
 display: flex;
 }
-/* easter egg */
+
 
 
 
@@ -61,3 +63,6 @@ display: flex;
     font-size: 1.5em;
 }
 
+#quiz_content label{
+color: white;
+}
