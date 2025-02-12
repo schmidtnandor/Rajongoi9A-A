@@ -39,10 +39,6 @@ display: flex;
 
 
 
-body {
-    
-    background-color: #000;
-}
 #auto_carousel img {
     width: 1120px;
     height: 628px;
@@ -61,9 +57,10 @@ body {
     color: black;
     opacity: 180%;
     font-size: 1.5em;
+
 }
 
 .card_osszes div {
     display: inline-block;
     place-items: center;
-  }
+}

@@ -7,44 +7,7 @@
     <link rel="stylesheet" href="fajlok/css/quiz.css">
     <link rel="stylesheet" href="fajlok/css/style.css">
     <link rel="stylesheet" href="fajlok/css/bootstrap.css">
-    <script>
-        function checkAnswers() {
-            // Correct answers (no extra spaces or typos)
-            const correctAnswers = {
-                "kerdoiv-nev": "Andrew Tate", // Correct name
-                "kerdoiv-holel": "Románia",  // Correct place of birth
-                "kerdoiv-kiszemelt": "Dua Lipa", // Correct friend
-                "kerdoiv-lecsukas": "Adócsalás" // Correct reason for imprisonment
-            };
-
-            // Get user-selected answers
-            const userAnswers = {
-                "kerdoiv-nev": document.getElementById("kerdoiv-nev").value,
-                "kerdoiv-holel": document.getElementById("kerdoiv-holel").value,
-                "kerdoiv-kiszemelt": document.getElementById("kerdoiv-kiszemelt").value,
-                "kerdoiv-lecsukas": document.getElementById("kerdoiv-lecsukas").value
-            };
-
-            // Check if all answers are correct
-            let allCorrect = true;
-            for (let key in correctAnswers) {
-                if (userAnswers[key] !== correctAnswers[key]) {
-                    allCorrect = false;
-                    break;
-                }
-            }
-
-            // Display the result
-            const resultElement = document.getElementById("result");
-            if (allCorrect) {
-                resultElement.textContent = "Gratulálok! Minden válasz helyes!";
-                resultElement.style.color = "green";
-            } else {
-                resultElement.textContent = "Valami nem stimmel. Próbáld újra!";
-                resultElement.style.color = "red";
-            }
-        }
-    </script>
+    
     <script src="fajlok/js/bootstrap.bundle.js"></script>
 </head>
 <body style="background-color: #35beda;">
@@ -75,28 +38,30 @@
               </div>
         </div>
         </nav>
-<div class="container-fluid" id="" style="place-items: center;">
-    <h1 class="text-center">Andrew Tate Quiz</h1>
-            <fieldset>
-                  <style>
-                        select{
 
-                              color: #ffff;
-                              background-color: #089893;
-                              border-color: #212529;
-                        }
+    <div class="container-fluid" id="quiz_content">
+        <div class="row justify-content-center">
+            <div class="col-md-6 p-3 bg-dark shadow-lg m-4" style="border-radius: 25px;">
+                <h1 class="text-center text-white">Andrew Tate Quiz</h1>
+                
+                <div class="quiz-page" id="page-1">
+                    <label for="kerdoiv-nev" class="text-white">Mi a neve?</label>
+                    <select id="kerdoiv-nev" class="form-control">
+                        <option value=""></option>
+                        <option value="Sigma Tate">Sigma Tate</option>
+                        <option value="Tate Tristan">Tate Tristan</option>
+                        <option value="Andrew Tate">Andrew Tate</option>
+                        <option value="Gocsik Dávid">Gocsik Dávid</option>
+                    </select>
+                    <label for="kerdoiv-holel" class="text-white mt-3">Hol született?</label>
+                    <select id="kerdoiv-holel" class="form-control">
+                        <option value=""></option>
+                        <option value="Goshen">Goshen</option>
+                        <option value="Kongo">Kongo</option>
+                        <option value="Románia">Románia</option>
+                        <option value="Miskolc">Miskolc</option>
 
 
-                        </style>
-                <div>
-                    <label for="kerdoiv-nev">Mi a neve?</label>
-                    <select name="Mi a neve" id="kerdoiv-nev">
-                        <option class="kerdes_option" value="" selected></option>
-                        <option class="kerdes_option" value="Sigma Tate" >Sigma Tate</option>
-                        <option class="kerdes_option" value="Andrew Andrew">Andrew Andrew</option>
-                        <option class="kerdes_option" value="Tate Tristan">Tate Tristan</option>
-                        <option class="kerdes_option" value="Andrew Tate">Andrew Tate</option> <!-- Fixed this option value -->
-                        <option class="kerdes_option" value="Minecraft Isti">McDonalds Isti</option>
                     </select>
                 </div>
                 <div>
@@ -139,63 +104,28 @@
                         <option class="kerdes_option" value="Kickbox">Kickbox</option>
                         <option class="kerdes_option" value="Kaszinó">Kaszinó</option>
                     </select>
+
+                        <label for="kerdoiv-hustler">Mi a Hustler’s University fő témája?</label>
+                        <select id="kerdoiv-hustler" class="form-control">
+                            <option value=""></option>
+                            <option value="Sakk stratégiák">Sakk stratégiák</option>
+                            <option value="Online pénzkeresés">Online pénzkeresés</option>
+                            <option value="Autók restaurálása">Autók restaurálása</option>
+                            <option value="Egészséges táplálkozás">Egészséges táplálkozás</option>
+                        </select>                  
+                    <button id="checkAnswers" class="btn btn-primary mt-3">Válaszok ellenőrzése</button>
                 </div>
-                <div><label for="kerdoiv-musor">Melyik britt tévé műsorbol rakták ki?</label>
-                    <select name="Melyik britt tévé műsorbol rakták ki" id="kerdoiv-musor">
-                    <option class="kerdes_option" value="" selected></option>
-                    <option class="kerdes_option" value="BBC London">BBC London</option>
-                    <option class="kerdes_option" value="The One Show">The One Show</option>
-                    <option class="kerdes_option" value="Big Brother">Big Brother</option>
-                    <option class="kerdes_option" value="Skibidi News">Skibidi News</option>
-                </select>
+                <div class="d-flex justify-content-between mt-3">
+                    <button id="prevPage" class="btn btn-secondary">Előző</button>
+                    <button id="nextPage" class="btn btn-secondary">Következő</button>
+                    
                 </div>
-                <div>
-                    <button type="button" onclick="checkAnswers()">Ellenőrizd a válaszokat</button>
-                </div>
-</div>
-<div>
-                <style>
-                    .image_valto {
-                        width: 700px;
-                        height: 500px;
-                        overflow: hidden;
-                        position: relative;
-                        float: right;
-                        opacity: 70;
-                    }
-                    .image_valto img {
-                        width: 100%;
-                        height: auto;
-                        display: none;
-                    }
-                </style>
-            </head>
-            
-            <div class="image_valto">
-                <img src="fajlok\kepek\tate_valto.png" alt="Táte" id="tate_valto" class="rounded pill">
-                <img src="fajlok\kepek\tate_valto2.png" alt="Táte" id="tate_valto2" class="rounded pill">
-                <img src="fajlok\kepek\tate_valto3.png" alt="Táte" id="tate_valto3" class="rounded pill">
-                <img src="fajlok/kepek/Andrew.png" alt="Mr.Andrew" id="andrew_valto" class="rounded pill">
+
             </div>
             
-            <script>
-                let currentImage = 0;
-                const images = document.querySelectorAll('.image_valto img');
-                
-                function showNextImage() {
-                    images[currentImage].style.display = 'none'; // Elrejti az aktuális képet
-                    currentImage = (currentImage + 1) % images.length; // Következő képre vált
-                    images[currentImage].style.display = 'block'; // Megjeleníti az új képet
-                }
             
-                // Kezdőképként az első kép látszik
-                images[currentImage].style.display = 'block';
-            
-                // Képváltás minden 2 másodpercben
-                setInterval(showNextImage, 2500);
-            </script>
             </fieldset>
-            <div id="result"></div> <!-- Result will be displayed here -->
+            
         </div>
 </div>
 
