@@ -43,6 +43,7 @@ display: flex;
     height: 200px;
 }
 
+
 #auto_carousel img {
     width: 1120px;
     height: 628px;
@@ -61,8 +62,19 @@ display: flex;
     color: black;
     opacity: 180%;
     font-size: 1.5em;
+
 }
+
 
 #quiz_content label{
 color: white;
 }
+
+.card_osszes div {
+    display: inline-block;
+    place-items: center;
+  }
+
+
+}
+
