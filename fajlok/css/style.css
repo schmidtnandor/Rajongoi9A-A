@@ -63,3 +63,7 @@ body {
     font-size: 1.5em;
 }
 
+.card_osszes div {
+    display: inline-block;
+    place-items: center
+  }
