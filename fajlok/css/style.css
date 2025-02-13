@@ -1,33 +1,3 @@
-
-  nav a:hover {
-    text-decoration: underline;
-   
-}
-
-
-
-
-#fooldal_carousel img{    
-border-radius: 25px;
-}
-
-.szovegdoboz {
-gap: 70px;
-
-}
-#fooldal_carousel {
-margin:auto;
-margin-top: 50px;
-margin-bottom: 50px;
-width: relative;
-height: relative;
-
-display: flex;
-}
-/* easter egg */
-
-
-
 #eastereggImage {
     display: none;
     position: fixed;
@@ -37,30 +7,141 @@ display: flex;
     height: 200px;
 }
 
-
-
-#auto_carousel img {
-    width: 1120px;
-    height: 628px;
+#fooldal_carousel {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
-    margin:auto;
 }
-.carousel-caption {
-    background: #ffffff;
-    opacity: 60%;
-}
-.carousel-caption h5 {
-    color: black;
-    opacity: 180%;
-}
-.carousel-caption p{
-    color: black;
-    opacity: 180%;
-    font-size: 1.5em;
 
+#fooldal_carousel img {
+    border-radius: 25px;
+}
+
+#viccespillanatok div {
+    margin: 10px;
+}
+
+#popup-image {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    height: 500px;
+    width: 700px;
+  }
+  #popup-text {
+    display: none; 
+    position: fixed; 
+    top: 60%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 50px; 
+    z-index: 1001;
+    font-weight: bold;
+  }
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+.card_osszes {
+    display: inline-block;
+    border-radius: 25px;
+    gap: 50px;
 }
 
 .card_osszes div {
-    display: inline-block;
-    place-items: center;
+    border-radius: 25px;
+    gap: 50px;
+}
+
+.carousel-caption {
+    background: #ffffff;
+    opacity: 0.6;
+}
+
+.carousel-caption h5 {
+    color: black;
+    opacity: 1.8;
+}
+
+.carousel-caption p {
+    color: black;
+    opacity: 1.8;
+    font-size: 1.5em;
+}
+
+.image_valto {
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    float: right;
+
+}
+
+.image_valto img {
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 25px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.row h2 {
+    text-align: center;
+}
+
+.szovegdoboz {
+    gap: 20px;
+}
+
+.szovegcol {
+    border-radius: 25px;
+}
+
+.quiz-page {
+    display: none;
+}
+.quiz-page:first-child {
+    display: block;
+}
+table {
+    border: 2px solid #000000;
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+    text-align: center;
+}
+
+td, th {
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: #212529;
+    color: #ffffff;
+}
+
+tr:nth-child(odd) {
+    background-color: #089893;
+}
+
+tr:nth-child(even) {
+    background-color: #353839;
+    color: #ffffff;
 }

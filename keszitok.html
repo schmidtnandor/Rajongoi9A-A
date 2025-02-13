@@ -1,73 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fajlok/css/style.css">
     <link rel="stylesheet" href="fajlok/css/bootstrap.css">
     <title>Készítők</title>
     <script src="fajlok/js/bootstrap.bundle.js"></script>
-</head>
-<body style="background-color: #35beda;">
+    <style>
+      
+    </style>
+    <script src="fajlok/js/troll.js" defer></script>
+      <audio id="popup-sound" src="fajlok/hang/vineboom.mp3"></audio>
+  </head>
+  <body style="background-color: #35beda;">
+    <div id="overlay"></div>
+    <img id="popup-image" src="fajlok/kepek/mogdominik.jpg" alt="Popup Image">
+    <div id="popup-text">
+      CAUGHT IN 4K 📸📸📸
+  </div>
+  
+  
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand"><img
+            src="fajlok/kepek/sigma_tate.png"
+            width="95px" height="60px"
+            class="rounded-pill"></a>
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse"
+            id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white rounded-2"
+                href="index.html">Főoldal</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white rounded-2"
+                href="viccespillanatok.html">Vicces
+                pillanatok</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white rounded-2"
+                href="erdekessegek.html">Érdekességek</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white rounded-2"
+                href="keszitok.html">Készítők</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white rounded-2"
+                href="quiz.html">Quiz</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <div class="container-fluid">
-                  <a href="index.html" class="navbar-brand"><img src="fajlok/kepek/sigma_tate.png" width="95px" height="60px" class="rounded-pill"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                      <span class="navbar-toggler-icon "></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                  <ul class="navbar-nav">
-                        <li class="nav-item">
-                  <a class="nav-link text-white rounded-2" href="index.html">Főoldal</a>
-                        </li>
-                        <li class="nav-item">
-                  <a class="nav-link text-white rounded-2" href="viccespillanatok.html">Vicces pillanatok</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-white rounded-2" href="erdekessegek.html">Érdekességek</a>
-                       </li>
-                       <li class="nav-item">
-                          <a class="nav-link text-white rounded-2" href="keszitok.html">Készítők</a>
-                       </li>
-                       <li class="nav-item">
-                          <a class="nav-link text-white rounded-2" href="quiz.html">Quiz</a>
-                       </li>
-                      </ul>
-                  </div>
-            </div>
-            </nav>
-<div class="card_osszes" style="   place-items: center;">
-      <h1 class="text-center">Készítők</h1>
-      <div class="card_align-items-center" style="width:400px">
-            <img class="card-img-top" src="fajlok/kepek/blabla.png" alt="Card image">
-            <div class="card-body">
-              <h4 class="card-title">Schmidt Nándor</h4>
-              <p class="card-text">bakfitty</p>
-              <a href="#" class="btn btn-primary">See Profile</a>
-            </div>
+    <div class="row card_osszes justify-content-center">
+      <h1 class="text-center p-3">Készítők</h1>
+      <div class="col-md-3 p-3 bg-dark shadow-lg">
+        <div class="text-white text-center">
+          <img class="card-img-top"
+               src="fajlok/kepek/mognandi.jpeg"
+               alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Schmidt Nándor</h4>
+            <p class="card-text">bakfitty</p>
+            <a href="https://www.tiktok.com/@nandilol" class="btn btn-primary">TikTok</a>
+            <a href="https://discordapp.com/users/643517967023341601" class="btn btn-primary">Discord</a>
+            <a href="#troll" class="btn btn-primary" id="troll">OnlyFans</a>
           </div>
-          <div class="card_align-items-center" style="width:400px">
-                <img class="card-img-top" src="fajlok/kepek/blabla.png" alt="Card image">
-                <div class="card-body">
-                  <h4 class="card-title">Csizmadia Márk</h4>
-                  <p class="card-text">bakfitty</p>
-                  <a href="#" class="btn btn-primary">See Profile</a>
-                </div>
-              </div>
-              <div class="card_align-items-center" style="width:400px">
-                    <img class="card-img-top" src="fajlok/kepek/blabla.png" alt="Card image">
-                    <div class="card-body">
-                      <h4 class="card-title">Csizmazia Milán</h4>
-                      <p class="card-text">The Real Sigma</p>
-                      <a href="#" class="btn btn-primary">Na Nézzük</a>
-                    </div>
-                  </div>
+        </div>
+      </div>
+      <div class="col-md-3 p-3 bg-dark shadow-lg">
+        <div class="text-white text-center">
+          <img class="card-img-top"
+               src="fajlok/kepek/blabla.png"
+               alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Csizmadia Márk</h4>
+            <p class="card-text">bakfitty</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 p-3 bg-dark shadow-lg">
+        <div class="text-white text-center">
+          <img class="card-img-top"
+               src="fajlok/kepek/blabla.png"
+               alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Csizmazia Milán</h4>
+            <p class="card-text">The Real Sigma</p>
+            <a href="#" class="btn btn-primary">Na Nézzük</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-</div>
-
-
-
-
-</body>
+  </body>
 </html>
