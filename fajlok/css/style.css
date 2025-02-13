@@ -1,11 +1,89 @@
+#eastereggImage {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+}
+
+#fooldal_carousel {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+#fooldal_carousel img {
+    border-radius: 25px;
+}
+
+#viccespillanatok div {
+    margin: 10px;
+}
+
+.card_osszes {
+    display: inline-block;
+    border-radius: 25px;
+    gap: 50px;
+}
+
+.card_osszes div {
+    border-radius: 25px;
+    gap: 50px;
+}
+
+.carousel-caption {
+    background: #ffffff;
+    opacity: 0.6;
+}
+
+.carousel-caption h5 {
+    color: black;
+    opacity: 1.8;
+}
+
+.carousel-caption p {
+    color: black;
+    opacity: 1.8;
+    font-size: 1.5em;
+}
+
+.image_valto {
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    float: right;
+
+}
+
+.image_valto img {
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 25px;
+}
+
 nav a:hover {
     text-decoration: underline;
+}
 
+.row h2 {
+    text-align: center;
+}
+
+.szovegdoboz {
+    gap: 20px;
+}
+
+.szovegcol {
+    border-radius: 25px;
 }
 
 table {
     border: 2px solid #000000;
-    font-family: arial, sans-serif;
+    font-family: Arial, sans-serif;
     border-collapse: collapse;
     width: 75%;
     text-align: center;
@@ -22,7 +100,6 @@ th {
     color: #ffffff;
 }
 
-
 tr:nth-child(odd) {
     background-color: #089893;
 }
@@ -30,87 +107,4 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
     background-color: #353839;
     color: #ffffff;
-}
-
-#viccespillanatok div {
-    margin: 10px;
-}
-
-.row h2 {
-    text-align: center;
-}
-
-.image_valto {
-    width: 500px;
-    height: 400px;
-    overflow: hidden;
-    position: relative;
-    float: right;
-    opacity: 70;
-}
-
-.image_valto img {
-    width: 100%;
-    height: auto;
-    display: none;
-    border-radius: 25px;
-}
-
-#fooldal_carousel img {
-    border-radius: 25px;
-}
-
-.szovegdoboz {
-    gap: 20px;
-
-}
-
-#fooldal_carousel {
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: relative;
-    height: relative;
-    display: flex;
-}
-
-#eastereggImage {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 200px;
-    height: 200px;
-}
-
-.carousel-caption {
-    background: #ffffff;
-    opacity: 60%;
-}
-
-.carousel-caption h5 {
-    color: black;
-    opacity: 180%;
-}
-
-.carousel-caption p {
-    color: black;
-    opacity: 180%;
-    font-size: 1.5em;
-
-}
-
-.card_osszes {
-    display: inline-block;
-    border-radius: 25px;
-    gap: 50px;
-}
-
-.card_osszes div {
-    border-radius: 25px;
-    gap: 50px;
-}
-
-.szovegcol {
-    border-radius: 25px;
 }
