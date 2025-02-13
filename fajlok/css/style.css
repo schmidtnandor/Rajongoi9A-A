@@ -1,78 +1,78 @@
-
-  nav a:hover {
+nav a:hover {
     text-decoration: underline;
-   
+
 }
+
 table {
     border: 2px solid #000000;
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 75%;
     text-align: center;
-  }
-  
-  td, th {
+}
+
+td, th {
     border: 1px solid #000000;
     text-align: center;
     padding: 8px;
-  }
-              
-  th{
+}
+
+th {
     background-color: #212529;
     color: #ffffff;
-  }
+}
 
-  
-  tr:nth-child(odd) {
+
+tr:nth-child(odd) {
     background-color: #089893;
-  }
+}
 
-  tr:nth-child(even) {
+tr:nth-child(even) {
     background-color: #353839;
     color: #ffffff;
-  }
-#viccespillanatok div{
+}
+
+#viccespillanatok div {
     margin: 10px;
-    }
+}
+
 .row h2 {
-        text-align: center;
-    }
+    text-align: center;
+}
+
 .image_valto {
-        width: 500px;
-        height: 400px;
-        overflow: hidden;
-        position: relative;
-        float: right;
-        opacity: 70;
-    }
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    float: right;
+    opacity: 70;
+}
+
 .image_valto img {
-        width: 100%;
-        height: auto;
-        display: none;
-        border-radius: 25px;
-    }
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 25px;
+}
 
-
-#fooldal_carousel img{    
-border-radius: 25px;
+#fooldal_carousel img {
+    border-radius: 25px;
 }
 
 .szovegdoboz {
-gap: 20px;
+    gap: 20px;
 
 }
+
 #fooldal_carousel {
-margin:auto;
-margin-top: 50px;
-margin-bottom: 50px;
-width: relative;
-height: relative;
-
-display: flex;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: relative;
+    height: relative;
+    display: flex;
 }
-/* easter egg */
-
-
 
 #eastereggImage {
     display: none;
@@ -83,23 +83,17 @@ display: flex;
     height: 200px;
 }
 
-
-
-#auto_carousel img {
-    width: 1120px;
-    height: 628px;
-    display: flex;
-    margin:auto;
-}
 .carousel-caption {
     background: #ffffff;
     opacity: 60%;
 }
+
 .carousel-caption h5 {
     color: black;
     opacity: 180%;
 }
-.carousel-caption p{
+
+.carousel-caption p {
     color: black;
     opacity: 180%;
     font-size: 1.5em;
@@ -108,11 +102,15 @@ display: flex;
 
 .card_osszes {
     display: inline-block;
-   border-radius: 25px;
-   gap: 50px;
-}
-.card_osszes div{
-   border-radius: 25px;
-   gap: 50px;
+    border-radius: 25px;
+    gap: 50px;
 }
 
+.card_osszes div {
+    border-radius: 25px;
+    gap: 50px;
+}
+
+.szovegcol {
+    border-radius: 25px;
+}

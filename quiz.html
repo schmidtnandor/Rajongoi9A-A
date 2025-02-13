@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
-    <link rel="stylesheet" href="fajlok/css/quiz.css">
-    <link rel="stylesheet" href="fajlok/css/style.css">
-    <link rel="stylesheet" href="fajlok/css/bootstrap.css">
-    <script src="fajlok/js/bootstrap.bundle.js"></script>
-    <script src="fajlok/js/quiz.js" defer></script>
-    <script src="fajlok/js/img_valto.js" defer></script>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="fajlok/css/quiz.css">
+        <link rel="stylesheet" href="fajlok/css/style.css">
+        <link rel="stylesheet" href="fajlok/css/bootstrap.css">
+        <script src="fajlok/js/bootstrap.bundle.js"></script>
+        <script src="fajlok/js/quiz.js" defer></script>
+        <script src="fajlok/js/img_valto.js" defer></script>
+        <style>
         .quiz-page {
             display: none;
         }
@@ -18,151 +18,192 @@
             display: block;
         }
     </style>
-</head>
-<body style="background-color: #35beda;">
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <div class="container-fluid">
-              <a href="index.html" class="navbar-brand"><img src="fajlok/kepek/sigma_tate.png" width="95px" height="60px" class="rounded-pill"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                  <span class="navbar-toggler-icon "></span>
-              </button>
-              <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav">
-                    <li class="nav-item">
-              <a class="nav-link text-white rounded-2" href="index.html">Főoldal</a>
-                    </li>
-                    <li class="nav-item">
-              <a class="nav-link text-white rounded-2" href="viccespillanatok.html">Vicces pillanatok</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white rounded-2" href="erdekessegek.html">Érdekességek</a>
-                   </li>
-                   <li class="nav-item">
-                      <a class="nav-link text-white rounded-2" href="keszitok.html">Készítők</a>
-                   </li>
-                   <li class="nav-item">
-                      <a class="nav-link text-white rounded-2" href="quiz.html">Quiz</a>
-                   </li>
-                  </ul>
-              </div>
-        </div>
-        </nav>
-    <div class="container-fluid" id="quiz_content">
-        <div class="row justify-content-center">
-            <div class="col-md-6 p-3 bg-dark shadow-lg m-4" style="border-radius: 25px;">
-                <h1 class="text-center text-white">Andrew Tate Quiz</h1>
-                
-                <div class="quiz-page" id="page-1">
-                    <label for="kerdoiv-nev" class="text-white">Mi a neve?</label>
-                    <select id="kerdoiv-nev" class="form-control">
-                        <option value=""></option>
-                        <option value="Sigma Tate">Sigma Tate</option>
-                        <option value="Tate Tristan">Tate Tristan</option>
-                        <option value="Andrew Tate">Andrew Tate</option>
-                        <option value="Gocsik Dávid">Gocsik Dávid</option>
-                    </select>
-                    <label for="kerdoiv-holel" class="text-white mt-3">Hol született?</label>
-                    <select id="kerdoiv-holel" class="form-control">
-                        <option value=""></option>
-                        <option value="Goshen">Goshen</option>
-                        <option value="Kongo">Kongo</option>
-                        <option value="Románia">Románia</option>
-                        <option value="Miskolc">Miskolc</option>
-                    </select>
-                </div>
-                
-                <div class="quiz-page" id="page-2">
-                    <label for="kerdoiv-vallalkozas" class="text-white">Mi volt az első online vállalkozásának neve?</label>
-                    <select id="kerdoiv-vallalkozas" class="form-control">
-                        <option value=""></option>
-                        <option value="TRW">The Real World</option>
-                        <option value="Xbox">Xbox</option>
-                        <option value="HU">Hustler’s University</option>
-                        <option value="warroom">The War Room</option>
-                    </select>
-                    <label for="kerdoiv-auto" class="text-white mt-3">Melyik autójára különösen büszke?</label>
-                    <select id="kerdoiv-auto" class="form-control">
-                        <option value=""></option>
-                        <option value="Sigmobil">Sigmobil</option>
-                        <option value="Bugatti Chiron">Bugatti Chiron</option>
-                        <option value="BMW M5 Competition">BMW M5 Competition</option>
-                        <option value="Aston Martin DB11">Aston Martin DB11</option>
-                    </select>
-                </div>
-                
-                <div class="quiz-page" id="page-3">
-                    <label for="kerdoiv-kickbox" class="text-white">Mikor kezdett el boxolni?</label>
-                    <select id="kerdoiv-kickbox" class="form-control">
-                        <option value=""></option>
-                        <option value="2004">2004</option>
-                        <option value="2007">2007</option>
-                        <option value="1998">1998</option>
-                        <option value="2005">2005</option>
-                    </select>
-                    <label for="kerdoiv-datum" class="text-white mt-3">Mi Andrew Tate születési dátuma?</label>
-                    <select id="kerdoiv-datum" class="form-control">
-                        <option value=""></option>
-                        <option value="1988. január 3.">1988. január 3.</option>
-                        <option value="1986. december 1.">1986. december 1.</option>
-                        <option value="1990. június 15.">1990. június 15.</option>
-                        <option value="1985. november 22.">1985. november 22.</option>
-                    </select>
-                </div>
-                
-                <div class="quiz-page" id="page-4">
-                    <label for="kerdoiv-nott-fel" class="text-white">Melyik országban nőtt fel?</label>
-                    <select id="kerdoiv-nott-fel" class="form-control">
-                        <option value=""></option>
-                        <option value="Amerika">Amerika</option>
-                        <option value="Olaszország">Olaszország</option>
-                        <option value="Egyesült Királyság">Egyesült Királyság</option>
-                        <option value="Kanada">Kanada</option>
-                    </select>
-                    <label for="kerdoiv-iska" class="text-white mt-3">Hány ISKA világbajnoki címet nyert?</label>
-                    <select id="kerdoiv-iska" class="form-control">
-                        <option value=""></option>
-                        <option value="Egyet">Egyet</option>
-                        <option value="Kettőt">Kettőt</option>
-                        <option value="Hármat">Hármat</option>
-                        <option value="Négyet">Négyet</option>
-                    </select>
-                </div>
-                
-                <div class="quiz-page" id="page-5">
-                    <label for="kerdoiv-ban" class="text-white">Miért tiltották ki a közösségi médiaplatformokról?</label>
-                    <select id="kerdoiv-ban" class="form-control">
-                        <option value=""></option>
-                        <option value="Sakkmeccseket közvetített">Sakkmeccseket közvetített</option>
-                        <option value="Kriptovalutát árult">Kriptovalutát árult</option>
-                        <option value="Irányelvek megsértése miatt">Irányelvek megsértése miatt</option>
-                        <option value="Soha nem tiltották ki">Soha nem tiltották ki</option>
-                    </select>
-                    <label for="kerdoiv-hustler" class="text-white">Mivel foglalkozott a Hustler's University?</label>
-                        <select id="kerdoiv-hustler" class="form-control">
-                            <option value=""></option>
-                            <option value="Sakk stratégiák">Sakk stratégiák</option>
-                            <option value="Online pénzkeresés">Online pénzkeresés</option>
-                            <option value="Autók restaurálása">Autók restaurálása</option>
-                            <option value="Egészséges táplálkozás">Egészséges táplálkozás</option>
-                        </select>                  
-                    <button id="checkAnswers" class="btn btn-primary mt-3">Válaszok ellenőrzése</button>
-                </div>
-                <div class="d-flex justify-content-between mt-3">
-                    <button id="prevPage" class="btn btn-secondary">Előző</button>
-                    <button id="nextPage" class="btn btn-secondary">Következő</button>
-                    
+    </head>
+    <body style="background-color: #35beda;">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand"><img
+                        src="fajlok/kepek/sigma_tate.png" width="95px"
+                        height="60px" class="rounded-pill"></a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white rounded-2"
+                                href="index.html">Főoldal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white rounded-2"
+                                href="viccespillanatok.html">Vicces
+                                pillanatok</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white rounded-2"
+                                href="erdekessegek.html">Érdekességek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white rounded-2"
+                                href="keszitok.html">Készítők</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white rounded-2"
+                                href="quiz.html">Quiz</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
+        </nav>
+        <div class="container-fluid" id="quiz_content">
+            <div class="row justify-content-center">
+                <div class="col-md-6 p-3 bg-dark shadow-lg m-4 szovegcol">
+                    <h1 class="text-center text-white">Andrew Tate Quiz</h1>
+
+                    <div class="quiz-page" id="page-1">
+                        <label for="kerdoiv-nev" class="text-white">Mi a
+                            neve?</label>
+                        <select id="kerdoiv-nev" class="form-control">
+                            <option value></option>
+                            <option value="Sigma Tate">Sigma Tate</option>
+                            <option value="Tate Tristan">Tate Tristan</option>
+                            <option value="Andrew Tate">Andrew Tate</option>
+                            <option value="Gocsik Dávid">Gocsik Dávid</option>
+                        </select>
+                        <label for="kerdoiv-holel" class="text-white mt-3">Hol
+                            született?</label>
+                        <select id="kerdoiv-holel" class="form-control">
+                            <option value></option>
+                            <option value="Goshen">Goshen</option>
+                            <option value="Kongo">Kongo</option>
+                            <option value="Románia">Románia</option>
+                            <option value="Miskolc">Miskolc</option>
+                        </select>
+                    </div>
+
+                    <div class="quiz-page" id="page-2">
+                        <label for="kerdoiv-vallalkozas" class="text-white">Mi
+                            volt az első online vállalkozásának neve?</label>
+                        <select id="kerdoiv-vallalkozas" class="form-control">
+                            <option value></option>
+                            <option value="TRW">The Real World</option>
+                            <option value="Xbox">Xbox</option>
+                            <option value="HU">Hustler’s University</option>
+                            <option value="warroom">The War Room</option>
+                        </select>
+                        <label for="kerdoiv-auto" class="text-white mt-3">Melyik
+                            autójára különösen büszke?</label>
+                        <select id="kerdoiv-auto" class="form-control">
+                            <option value></option>
+                            <option value="Sigmobil">Sigmobil</option>
+                            <option value="Bugatti Chiron">Bugatti
+                                Chiron</option>
+                            <option value="BMW M5 Competition">BMW M5
+                                Competition</option>
+                            <option value="Aston Martin DB11">Aston Martin
+                                DB11</option>
+                        </select>
+                    </div>
+
+                    <div class="quiz-page" id="page-3">
+                        <label for="kerdoiv-kickbox" class="text-white">Mikor
+                            kezdett el boxolni?</label>
+                        <select id="kerdoiv-kickbox" class="form-control">
+                            <option value></option>
+                            <option value="2004">2004</option>
+                            <option value="2007">2007</option>
+                            <option value="1998">1998</option>
+                            <option value="2005">2005</option>
+                        </select>
+                        <label for="kerdoiv-datum" class="text-white mt-3">Mi
+                            Andrew Tate születési dátuma?</label>
+                        <select id="kerdoiv-datum" class="form-control">
+                            <option value></option>
+                            <option value="1988. január 3.">1988. január
+                                3.</option>
+                            <option value="1986. december 1.">1986. december
+                                1.</option>
+                            <option value="1990. június 15.">1990. június
+                                15.</option>
+                            <option value="1985. november 22.">1985. november
+                                22.</option>
+                        </select>
+                    </div>
+
+                    <div class="quiz-page" id="page-4">
+                        <label for="kerdoiv-nott-fel" class="text-white">Melyik
+                            országban nőtt fel?</label>
+                        <select id="kerdoiv-nott-fel" class="form-control">
+                            <option value></option>
+                            <option value="Amerika">Amerika</option>
+                            <option value="Olaszország">Olaszország</option>
+                            <option value="Egyesült Királyság">Egyesült
+                                Királyság</option>
+                            <option value="Kanada">Kanada</option>
+                        </select>
+                        <label for="kerdoiv-iska" class="text-white mt-3">Hány
+                            ISKA világbajnoki címet nyert?</label>
+                        <select id="kerdoiv-iska" class="form-control">
+                            <option value></option>
+                            <option value="Egyet">Egyet</option>
+                            <option value="Kettőt">Kettőt</option>
+                            <option value="Hármat">Hármat</option>
+                            <option value="Négyet">Négyet</option>
+                        </select>
+                    </div>
+
+                    <div class="quiz-page" id="page-5">
+                        <label for="kerdoiv-ban" class="text-white">Miért
+                            tiltották ki a közösségi médiaplatformokról?</label>
+                        <select id="kerdoiv-ban" class="form-control">
+                            <option value></option>
+                            <option
+                                value="Sakkmeccseket közvetített">Sakkmeccseket
+                                közvetített</option>
+                            <option value="Kriptovalutát árult">Kriptovalutát
+                                árult</option>
+                            <option
+                                value="Irányelvek megsértése miatt">Irányelvek
+                                megsértése miatt</option>
+                            <option value="Soha nem tiltották ki">Soha nem
+                                tiltották ki</option>
+                        </select>
+                        <label for="kerdoiv-hustler" class="text-white">Mivel
+                            foglalkozott a Hustler's University?</label>
+                        <select id="kerdoiv-hustler" class="form-control">
+                            <option value></option>
+                            <option value="Sakk stratégiák">Sakk
+                                stratégiák</option>
+                            <option value="Online pénzkeresés">Online
+                                pénzkeresés</option>
+                            <option value="Autók restaurálása">Autók
+                                restaurálása</option>
+                            <option value="Egészséges táplálkozás">Egészséges
+                                táplálkozás</option>
+                        </select>
+                        <button id="checkAnswers"
+                            class="btn btn-primary mt-3">Válaszok
+                            ellenőrzése</button>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <button id="prevPage"
+                            class="btn btn-secondary">Előző</button>
+                        <button id="nextPage"
+                            class="btn btn-secondary">Következő</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
                 <div class=" col-4 h-100 image_valto">
                     <img src="fajlok\kepek\tate_2.png" id="tate_valto">
                     <img src="fajlok\kepek\tate_6.png" id="tate_valto2">
                     <img src="fajlok\kepek\tate_7.png" id="tate_valto3">
                 </div>
+            </div>
+
         </div>
-        
-        
-    </div>
-</body>
+    </body>
 </html>
