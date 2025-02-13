@@ -29,6 +29,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
+    height: 500px;
+    width: 800px;
   }
   #overlay {
     display: none;
@@ -40,7 +42,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
   }
-  
+
 .card_osszes {
     display: inline-block;
     border-radius: 25px;
