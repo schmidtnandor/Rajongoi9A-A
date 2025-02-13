@@ -6,10 +6,22 @@
 #viccespillanatok div{
     margin: 10px;
     }
-    .row h2 {
+.row h2 {
         text-align: center;
     }
-
+    .image_valto {
+        width: 500px;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        float: right;
+        opacity: 70;
+    }
+    .image_valto img {
+        width: 100%;
+        height: auto;
+        display: none;
+    }
 
 
 #fooldal_carousel img{    
