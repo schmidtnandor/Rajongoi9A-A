@@ -31,18 +31,21 @@
     z-index: 1000;
     height: 500px;
     width: 700px;
-  }
-  #popup-text {
-    display: none; 
-    position: fixed; 
-    top: 60%; left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: white; 
-    font-size: 50px; 
+}
+
+#popup-text {
+    display: none;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
     z-index: 1001;
     font-weight: bold;
-  }
-  #overlay {
+}
+
+#overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -51,7 +54,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
-  }
+}
 
 .card_osszes {
     display: inline-block;
@@ -86,7 +89,6 @@
     overflow: hidden;
     position: relative;
     float: right;
-
 }
 
 .image_valto img {
@@ -115,9 +117,11 @@ nav a:hover {
 .quiz-page {
     display: none;
 }
+
 .quiz-page:first-child {
     display: block;
 }
+
 table {
     border: 2px solid #000000;
     font-family: Arial, sans-serif;
@@ -126,7 +130,8 @@ table {
     text-align: center;
 }
 
-td, th {
+td,
+th {
     border: 1px solid #000000;
     text-align: center;
     padding: 8px;
